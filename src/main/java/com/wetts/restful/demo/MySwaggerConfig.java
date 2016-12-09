@@ -16,7 +16,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * Created by wetts on 2016/12/8.
  */
-@Configuration
+// 让Spring来加载该类配置，Spring Boot用下配置
+//@Configuration
 @EnableWebMvc //NOTE: Only needed in a non-springboot application
 @EnableSwagger2
 public class MySwaggerConfig {
