@@ -22,6 +22,11 @@
         </mvc:message-converters>
     </mvc:annotation-driven>
 
+    <bean class="com.wetts.restful.demo.MySwaggerConfig"></bean>
+
+    <mvc:resources location="classpath:/META-INF/resources/" mapping="swagger-ui.html"/>
+    <mvc:resources location="classpath:/META-INF/resources/webjars/" mapping="/webjars/**"/>
+
     <bean id="contentNegotiationManager" class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
         <!-- 用于开启 /userinfo/123?format=json 的支持 默认是true -->
         <property name="favorParameter" value="true"/>

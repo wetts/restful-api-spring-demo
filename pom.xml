@@ -2,10 +2,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.wetts</groupId>
-    <artifactId>restful-api-spring-demo</artifactId>
+    <artifactId>restful-api-spring-swagger2-demo</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>restful-api-spring-demo Maven Webapp</name>
+    <name>restful-api-spring-swagger2-demo Maven Webapp</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -22,6 +22,7 @@
         <javax.el-api.version>3.0.0</javax.el-api.version>
         <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
         <jsp-api.version>2.0</jsp-api.version>
+        <swagger2.version>2.6.1</swagger2.version>
     </properties>
 
     <dependencies>
@@ -31,6 +32,20 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- 文档工具 -->
+        <!-- swagger start -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger2.version}</version>
+        </dependency>
+        <!-- swagger end -->
 
         <dependency>
             <groupId>javax.servlet</groupId>
