@@ -1,5 +1,7 @@
 # restful-api-spring-demo
-spring实现restful风格的api
+springmvc实现restful风格的api
+
+并整合了swagger2
 
 支持返回格式为json以及xml的数据
 
