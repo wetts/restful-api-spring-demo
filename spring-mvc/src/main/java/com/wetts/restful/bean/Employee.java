@@ -1,4 +1,4 @@
-package com.wetts.restful.demo.bean;
+package com.wetts.restful.bean;
 
 import javax.xml.bind.annotation.XmlRootElement;
 

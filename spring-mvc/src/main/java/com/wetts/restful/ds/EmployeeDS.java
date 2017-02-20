@@ -1,4 +1,4 @@
-package com.wetts.restful.demo.ds;
+package com.wetts.restful.ds;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -6,8 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import com.wetts.restful.demo.bean.Employee;
-import org.springframework.stereotype.Component;
+import com.wetts.restful.bean.Employee;
 
 public class EmployeeDS {
 

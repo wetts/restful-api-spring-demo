@@ -1,5 +1,5 @@
 # restful-api-spring-demo
-springmvc实现restful风格的api
+spring-mvc和spring-boot 分别实现restful风格的api
 
 并整合了swagger2
 

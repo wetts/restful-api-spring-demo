@@ -1,4 +1,4 @@
-package com.wetts.restful.demo;
+package com.wetts.restful;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

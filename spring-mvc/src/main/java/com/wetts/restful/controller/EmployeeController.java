@@ -1,8 +1,8 @@
-package com.wetts.restful.demo.controller;
+package com.wetts.restful.controller;
 
-import com.wetts.restful.demo.bean.Employee;
-import com.wetts.restful.demo.bean.EmployeeList;
-import com.wetts.restful.demo.ds.EmployeeDS;
+import com.wetts.restful.bean.Employee;
+import com.wetts.restful.bean.EmployeeList;
+import com.wetts.restful.ds.EmployeeDS;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
