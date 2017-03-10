@@ -10,3 +10,7 @@ spring-mvc和spring-boot 分别实现restful风格的api
 1. header里面传Accept
 2. 添加参数format=json
 3. 加后缀名.json
+
+
+
+文档的访问路径为：http://localhost:8080/swagger-ui.html

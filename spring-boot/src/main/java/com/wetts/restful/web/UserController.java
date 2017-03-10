@@ -17,10 +17,18 @@ public class UserController {
 
     static Map<Long, User> users = Collections.synchronizedMap(new HashMap<Long, User>());
 
-    @ApiOperation(value = "获取用户列表", notes = "")
-    @RequestMapping(value = {""}, method = RequestMethod.GET)
+    @ApiOperation(nickname = "v1.0", value = "获取用户列表v1.0", notes = "v1.0")
+    @RequestMapping(value = {""}, method = RequestMethod.GET, headers = "version=1.0")
     public List<User> getUserList() {
         List<User> r = new ArrayList<User>(users.values());
+        return r;
+    }
+
+    @ApiOperation(nickname = "v2.0", value = "获取用户列表v2.0", notes = "v2.0")
+    @RequestMapping(value = {""}, method = RequestMethod.GET, headers = "version=2.0")
+    public List<User> getUserListV2() {
+        List<User> r = new ArrayList<User>(users.values());
+        r.add(new User());
         return r;
     }
 
