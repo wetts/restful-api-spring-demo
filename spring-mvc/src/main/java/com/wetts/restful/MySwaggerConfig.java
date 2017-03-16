@@ -1,5 +1,6 @@
 package com.wetts.restful;
 
+import io.swagger.annotations.ApiOperation;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -27,6 +28,8 @@ public class MySwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
+                .apis(RequestHandlerSelectors.basePackage("com.wetts.restful.controller")) // 设置扫描路径
+                .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class)) // 设置扫描方法包含的注解
                 .paths(PathSelectors.any())
                 .build();
     }
